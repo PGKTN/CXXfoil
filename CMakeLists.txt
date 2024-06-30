@@ -14,3 +14,7 @@ if(TESTING)
   add_subdirectory(tests)
 endif()
 
+add_subdirectory(CXXfoil)
+
+add_executable(${TARGET} xfoil_runner.cc)
+target_link_libraries(${TARGET} cxxfoil)
